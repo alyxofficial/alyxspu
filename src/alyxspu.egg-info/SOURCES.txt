@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/alyxspu/__init__.py
+src/alyxspu/__main__.py
+src/alyxspu/device.py
+src/alyxspu/gui.py
+src/alyxspu.egg-info/PKG-INFO
+src/alyxspu.egg-info/SOURCES.txt
+src/alyxspu.egg-info/dependency_links.txt
+src/alyxspu.egg-info/entry_points.txt
+src/alyxspu.egg-info/requires.txt
+src/alyxspu.egg-info/top_level.txt
+tests/test_device.py
