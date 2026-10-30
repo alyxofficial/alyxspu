@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alyxspu"
+version = "0.1.0"
+description = "Python driver and desktop studio for the Alyx I100 SPU (ESP32) over USB serial"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+keywords = ["esp32", "serial", "neural network", "microcontroller", "alyx", "spu"]
+dependencies = ["pyserial>=3.5"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Hardware",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+alyxspu-studio = "alyxspu.gui:main"
+alyxspu-firmware = "alyxspu:_print_firmware_path"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+alyxspu = ["firmware/*/*.ino"]
