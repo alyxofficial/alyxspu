@@ -1,3 +1,0 @@
-[console_scripts]
-alyxspu-firmware = alyxspu:_print_firmware_path
-alyxspu-studio = alyxspu.gui:main
